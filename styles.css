@@ -143,9 +143,26 @@ button:hover {
 	padding: 10px;
 }
 
-.fa-solid {
+.fa-trash {
 	color: gray;
 }
-.fa-solid:hover {
+
+.fa-trash:hover {
+	color: black;
+}
+
+.fa-pen-to-square {
+	color: gray;
+}
+
+.fa-pen-to-square:hover {
+	color: black;
+}
+
+.fa-check {
+	color: gray;
+}
+
+.fa-check:hover {
 	color: black;
 }
