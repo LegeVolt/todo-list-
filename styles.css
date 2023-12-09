@@ -142,3 +142,10 @@ button:hover {
 	margin-left: 30px;
 	padding: 10px;
 }
+
+.fa-solid {
+	color: gray;
+}
+.fa-solid:hover {
+	color: black;
+}
