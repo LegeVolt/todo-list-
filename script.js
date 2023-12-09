@@ -76,7 +76,7 @@ function addValue() {
 
 		//--------------------------------------------------------------------------------
 
-		// changing a color to each li
+		// changing a color to each item
 		let color = document.getElementById('color').value;
 		contentP.style.color = color;
 	} else {
