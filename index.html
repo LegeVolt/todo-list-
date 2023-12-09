@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="https://kit.fontawesome.com/ba4fdb6b6f.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet" />
+		<!--for time-->
+		<script src="https://cdn.jsdelivr.net/npm/dayjs/dayjs.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/dayjs/plugin/relativeTime.js"></script>
+		<script>
+			dayjs.extend(dayjs_plugin_relativeTime);
+		</script>
+		<!--for time-->
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div><h1 class="todo-headline">Todo</h1></div>
+
+			<div class="ul-container">
+				<ul></ul>
+			</div>
+			<div class="create-item-container">
+				<h1>Create an item</h1>
+				<input class="user-input" type="text" name="user_input" placeholder="Enter text here" id="input" />
+			</div>
+			<select name="color" class="form-control" id="color">
+				<option style="color: black" value="">Black</option>
+				<option style="color: blue">Blue</option>
+				<option style="color: red">Red</option>
+				<option style="color: green">green</option>
+			</select>
+			<button onclick="addValue()" type="submit">Save</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
