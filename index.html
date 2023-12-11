@@ -19,25 +19,26 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="container">
-			<div><h1 class="todo-headline">Todo</h1></div>
+		<div class="big-container">
+			<div class="container">
+				<div><h1 class="todo-headline">Todo</h1></div>
 
-			<div class="ul-container">
-				<ul></ul>
+				<div class="ul-container">
+					<ul class="items"></ul>
+				</div>
+				<div class="create-item-container">
+					<h1>Create an item</h1>
+					<input class="user-input" type="text" name="user_input" placeholder="Enter text here" id="input" />
+				</div>
+				<select name="color" class="form-control color">
+					<option style="color: black" value="">Black</option>
+					<option style="color: blue">Blue</option>
+					<option style="color: red">Red</option>
+					<option style="color: green">green</option>
+				</select>
+				<button class="save-button clickable" onclick="addValue()" type="button">Save</button>
 			</div>
-			<div class="create-item-container">
-				<h1>Create an item</h1>
-				<input class="user-input" type="text" name="user_input" placeholder="Enter text here" id="input" />
-			</div>
-			<select name="color" class="form-control" id="color">
-				<option style="color: black" value="">Black</option>
-				<option style="color: blue">Blue</option>
-				<option style="color: red">Red</option>
-				<option style="color: green">green</option>
-			</select>
-			<button onclick="addValue()" type="submit">Save</button>
 		</div>
-
 		<script src="script.js"></script>
 	</body>
 </html>
