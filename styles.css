@@ -1,9 +1,15 @@
 body {
+	font-family: 'Caveat', cursive;
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.big-container {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .container {
@@ -12,28 +18,29 @@ body {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
 	position: relative;
 	border-radius: 20px;
-	overflow-y: hidden;
 }
 
 .todo-headline {
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 30px;
+	font-family: 'Caveat', cursive;
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .ul-container {
 	padding-top: 10px;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	overflow: auto;
 	height: 320px;
 	margin-top: 30px;
 	padding-bottom: 10px;
 	background-color: whitesmoke;
 }
 
-ul {
+.items {
 	display: flex;
-	gap: 20px;
+	row-gap: 20px;
 	flex-direction: column;
 	list-style-type: none;
 	padding-left: 5px;
@@ -41,7 +48,7 @@ ul {
 	margin-right: 20px;
 }
 
-li {
+.li-item {
 	display: grid;
 	grid-template-columns: 1fr 50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -63,7 +70,7 @@ li {
 }
 
 .user-input {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+	border: solid black 2px;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 6px;
@@ -81,18 +88,11 @@ li {
 	margin-right: 0px;
 }
 
-h1 {
-	font-family: 'Caveat', cursive;
-	font-family: 'Libre Baskerville', serif;
-	font-family: 'Open Sans', sans-serif;
-}
-
 .create-item-container {
 	margin-left: 20px;
-	position: absolute;
 }
 
-button {
+.save-button {
 	background-color: gray;
 	border: none;
 	color: white;
@@ -102,7 +102,6 @@ button {
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 15px;
-	margin-top: 110px;
 	margin-bottom: 30px;
 }
 
@@ -137,14 +136,16 @@ button:hover {
 	font-size: 14px;
 }
 
-#color {
+.color {
 	border-radius: 10px;
 	margin-left: 30px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 .fa-trash {
-	color: gray;
+	cursor: pointer;
+	border: 0;
 }
 
 .fa-trash:hover {
@@ -153,6 +154,7 @@ button:hover {
 
 .fa-pen-to-square {
 	color: gray;
+	cursor: pointer;
 }
 
 .fa-pen-to-square:hover {
@@ -161,8 +163,13 @@ button:hover {
 
 .fa-check {
 	color: gray;
+	cursor: pointer;
 }
 
 .fa-check:hover {
 	color: black;
+}
+
+.clickable {
+	cursor: pointer;
 }
